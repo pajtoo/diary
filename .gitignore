@@ -1,0 +1,44 @@
+##
+## Backend
+##
+
+# Ignore files in the "diary-backend" folder
+diary-backend/target/
+diary-backend/.mvn/wrapper/maven-wrapper.jar
+diary-backend/**/src/main/**/target/
+diary-backend/**/src/test/**/target/
+
+### IntelliJ IDEA for diary-backend ###
+diary-backend/.idea/modules.xml
+diary-backend/.idea/jarRepositories.xml
+diary-backend/.idea/compiler.xml
+diary-backend/.idea/libraries/
+diary-backend/*.iws
+diary-backend/*.iml
+diary-backend/*.ipr
+
+##
+## Frontend
+##
+
+# Ignore files only in the "diary-frontend" folder
+diary-frontend/node_modules/
+diary-frontend/.pnp/
+diary-frontend.pnp.js
+
+# testing
+diary-frontend/coverage/
+
+# production
+diary-frontend/build/
+
+# misc
+diary-frontend/.DS_Store
+diary-frontend/.env.local
+diary-frontend/.env.development.local
+diary-frontend/.env.test.local
+diary-frontend/.env.production.local
+
+diary-frontend/npm-debug.log*
+diary-frontend/yarn-debug.log*
+diary-frontend/yarn-error.log*

@@ -1,0 +1,84 @@
+/* Navigace - Flexbox */
+body {
+  background-color: #183aa1;
+  color: white;
+}
+
+nav {
+  background-color: #333; /* tmavší pozadí pro navigaci */
+  padding: 10px 0;
+
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* zajistí, že navigace bude vždy nahoře */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; /* vycentruje položky horizontálně */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 15px; /* mezera mezi odkazy */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease; /* hladká změna barvy při hoveru */
+}
+
+nav a:hover {
+  color: #ffd700; /* barva na hover */
+}
+
+/* Hlavní menu */
+.main-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* výška na celou obrazovku */
+}
+
+.main-menu ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px; /* maximální šířka pro tlačítka */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-menu li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-menu button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* změna pozadí a zvětšení při hoveru */
+}
+
+.main-menu button:hover {
+  background-color: #222; /* tmavší odstín na hover */
+  transform: scale(1.05); /* mírně zvětší tlačítko */
+}
+
+.main-menu button:active {
+  transform: scale(0.95); /* tlačítko se zmenší při kliknutí */
+}
